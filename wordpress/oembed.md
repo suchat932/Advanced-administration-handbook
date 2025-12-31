@@ -34,7 +34,3 @@ However, if you feel you are knowledgeable enough to not require this level of s
 
 The oEmbed discovery content for "link" and "photo" types is not quite so heavily filtered in this manner; however, it is properly escaped for security and to prevent any malicious content from being displayed on the site
 
-## Changelog
-
-- 2023-01-25: Review and Update Content. Linked list of whitelisted providers.
-- 2022-09-11: Added content from [oEmbed](https://docs.google.com/document/d/1ni59ohlSHeCH_BwRtxUXzGY1LLWqFiaaGQFcCjh_2rQ/).

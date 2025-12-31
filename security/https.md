@@ -22,7 +22,7 @@ That happens when your web browser wants you to know a site is NOT using HTTPS. 
 
 In turn, you don't want browsers suggesting you might be that kind of shady site owner yourself.
 
-WordPress is fully [compatible with HTTPS when an TLS / SSL certificate](https://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/) is installed and available for the web server to use. Support for HTTPS is strongly recommended to help maintain the security of both WordPress logins and site visitors.
+WordPress is fully compatible with HTTPS when an TLS / SSL certificate is installed and available for the web server to use. Support for HTTPS is strongly recommended to help maintain the security of both WordPress logins and site visitors.
 
 ## Administration Over HTTPS
 
@@ -54,6 +54,25 @@ define( 'FORCE_SSL_ADMIN', true );
 if( strpos( $_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false )
 	$_SERVER['HTTPS'] = 'on';
 ```
+
+#### Notice
+
+When you're using a proxy pass redirection, you transmit the request to an host of your networks but don't transmit the headers linked to it. However some headers are needed by wordpress to make it able to do some redirections. In order to transmit them you need to add some lines to your redirection.
+
+For instance, with Nginx you need to have these lines:
+```
+location / {
+	proxy_pass http://your_host_name:your_port;
+	proxy_set_header Host $host:$server_port;
+	proxy_set_header X-Real-IP $remote_addr;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header X-Forwarded-Host $server_name;
+	proxy_set_header X-Forwarded-Proto $scheme;
+	proxy_redirect off;
+}
+```
+
+The variables like `$variable` are automatically managed by the reverse proxy.
 
 ### Further Information {#further-information}
 
@@ -221,6 +240,3 @@ More testing, preferably with a packet sniffer and some hardcore network analysi
 
 The author assumes (but hasn't checked) that if the user has stored cookies/told their browser to remember passwords (not based on form fields but if using certain external auth mechanism) and hits https://www.example.com/wp-admin/, those packets are sent in the clear and the cookie/auth headers could be intercepted. Therefore, to ensure maximum security, the user should explicitly use the https host or always log in at the beginning of new sessions.
 
-## Changelog
-
-- 2022-10-25: Original content from [Why should I use HTTPS](https://wordpress.org/documentation/article/why-should-i-use-https/), and [Administration Over SSL](https://wordpress.org/documentation/article/administration-over-ssl/).

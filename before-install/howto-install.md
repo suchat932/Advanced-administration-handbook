@@ -4,8 +4,8 @@ WordPress is well-known for its ease of installation. Under most circumstances, 
 
 ## Things to Know Before Installing WordPress
 
-Before you begin the install, there are a few things you need to have and do. Refer the article [Before You Install](https://developer.wordpress.org/advanced-administration/before-install/).
-If you need multiple WordPress instances, refer [Installing Multiple WordPress Instances.](https://developer.wordpress.org/advanced-administration/before-install/multiple-instances/)
+Before you begin the install, there are a few things you need to have and do. Refer the article [Before You Install](https://developer.wordpress.org/advanced-administration/before-install/). It's also good to verify that e-mail delivery is working properly on your host. Refer to [Mail](https://developer.wordpress.org/advanced-administration/server/mail/) for more information.
+If you need multiple WordPress instances, refer [Installing Multiple WordPress Instances.](https://developer.wordpress.org/advanced-administration/before-install/multiple-instances/).
 
 ## Basic Instructions
 
@@ -39,7 +39,7 @@ Download and unzip the WordPress package from [wordpress.org/download/](https://
 
     The WordPress package will extract into a folder called wordpress in the same directory that you downloaded latest.tar.gz.
 
-### Step 2: Download and Extract {#detailed-step-2}
+### Step 2: Create a database for WordPress {#detailed-step-2}
 
 If you are using a [hosting provider](https://wordpress.org/documentation/article/glossary/#hosting-provider), you may already have a WordPress database set up for you, or there may be an automated setup solution to do so. Check your hosting provider's support pages or your control panel for clues about whether or not you'll need to create one manually.
 
@@ -222,9 +222,3 @@ Check to make sure that your configuration of your web-server is correct and tha
 **My image/MP3 uploads aren't working.**
 
 If you use the Rich Text Editor on a blog that's installed in a subdirectory, and drag a newly uploaded image into the editor field, the image may vanish a couple seconds later. This is due to a problem with TinyMCE (the rich text editor) not getting enough information during the drag operation to construct the path to the image or other file correctly. The solution is to NOT drag uploaded images into the editor. Instead, click and hold on the image and select **Send to Editor.**
-
-## Changelog
-
-- 2022-09-14: Added alt tags to all images.
-- 2022-09-14: cleared up a link refering to the [utf8mb4 article](https://make.wordpress.org/core/2015/04/02/the-utf8mb4-upgrade/)
-- 2022-09-14: Original content from [How to install WordPress](https://wordpress.org/documentation/article/how-to-install-wordpress/)

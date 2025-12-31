@@ -15,7 +15,7 @@ Make note of any browsers you are experiencing the error in. You can use this in
 
 ## Step 2: Enable SCRIPT_DEBUG
 
-You need to turn on [script debugging](https://wordpress.org/documentation/article/debugging-in-wordpress#SCRIPT_DEBUG). Open `wp-config.php` and add the following line before "That's all, stop editing! Happy blogging".
+You need to turn on [script debugging](https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/#script_debug). Open `wp-config.php` and add the following line before "That's all, stop editing! Happy blogging".
 
 ```
 define('SCRIPT_DEBUG', true);
@@ -30,8 +30,8 @@ Check to see if you are still having an issue.
 
 ### Open the Developer Tools 
 
-* **Chrome**: Type `Cmd-Option-J` (Mac) or `Ctrl-Shift-J` (Windows, Linux, Chrome OS), or nagivate to `View -> Developer -> Developer Tools` in the menu.
-* **Firefox**: Type `Cmd-Option-K` (Mad) or `Ctrl-Shift-K` (Windows, Linux, Chrome OS), or navigate to `Web Development -> Web Console` in the menu.
+* **Chrome**: Type `Cmd-Option-J` (Mac) or `Ctrl-Shift-J` (Windows, Linux, Chrome OS), or navigate to `View -> Developer -> Developer Tools` in the menu.
+* **Firefox**: Type `Cmd-Option-K` (Mac) or `Ctrl-Shift-K` (Windows, Linux, Chrome OS), or navigate to `Web Development -> Web Console` in the menu.
 * **Edge**: Follow the instructions for Chrome.
 * **Safari**: First, navigate to `Safari -> Preferences`. Click on the `Advanced` tab, then check `Show Develop Menu in menu bar`. Then, in the new `Develop` menu, navigate to `Show JavaScript Console`.
 * **Opera**: Navigate to `Tools -> Advanced -> Error Console` in the menu.
@@ -61,6 +61,3 @@ Please include the below information:
 * the context of the error – including the whole error stack will help developers
 * If possible, a link to the web page showing the error
 
-## Changelog
-
-- 2022-09-11: Original content from [Using Your Browser to Diagnose JavaScript Errors](https://wordpress.org/documentation/article/using-your-browser-to-diagnose-javascript-errors/). Consolidated Developer Tools instuctions, removed IE documentation.

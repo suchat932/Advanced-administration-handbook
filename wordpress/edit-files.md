@@ -88,8 +88,9 @@ Editors to avoid include any do-it-yourself instant web page software (like Adob
 
 The following [text editors](https://wordpress.org/documentation/article/wordpress-glossary/#text-editor) are acceptable for file editing:
 
-* [BBEdit](https://www.barebones.com/products/bbedit/) (Mac, $)
+* [BBEdit](https://www.barebones.com/products/bbedit/) (Mac, Free)
 * [Crimson Editor](http://www.crimsoneditor.com/) (Windows, Free)
+* [CodeLobster](https://codelobster.com/) (Mac, Linux, Windows, Free)
 * [EditPad](https://www.editpadpro.com/) (Windows)
 * [EditPlus](https://www.editplus.com/) (Windows)
 * [emacs](https://www.gnu.org/software/emacs/emacs.html) (Mac, Linux, Windows) Open-Source, Free
@@ -106,7 +107,3 @@ The following [text editors](https://wordpress.org/documentation/article/wordpre
 * [Visual Studio Code](https://code.visualstudio.com/) (Mac, Linux, Windows)
 * [NetBeans](https://netbeans.apache.org/) (Mac, Linux, Windows)
 
-## Changelog
-
-- 2023-01-20: Updated broken links. Removed non-existing text editors.
-- 2022-09-11: Original content from [Editing Files](https://wordpress.org/documentation/article/editing-files/).

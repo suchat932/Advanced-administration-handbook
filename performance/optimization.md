@@ -229,13 +229,10 @@ If you use a Persistent Object Cache, options (whether autoloaded or not) load f
 
 ### WordCamp Performance Presentations
 
+- [Democratizing Performance by Pascal Birchler from WordCamp Asia 2024](https://wordpress.tv/2024/04/09/democratizing-performance/)
 - [High-Performance WordPress by Iliya Polihronov from WordCamp 2012 (San Francisco)](https://wordpress.tv/2012/09/01/iliya-polihronov-high-performance-wordpress/)
 - [WordPress Optimization from WordCamp Israel 2013](https://www.slideshare.net/AlmogBaku/wordpress-optimization-16678718)
 - [Copy of the Slides on HyperDB and High Performance from WordCamp 2007 (San Francisco)](https://barry.blog/2007/07/22/high-performance-wordpress/)
    - [Presentation on HyperDB and High Performance from WordCamp 2007 (San Francisco)](https://onemansblog.com/2007/08/16/wordcamp-2007-hyperdb-and-high-performance-wordpress/)
 - [50 tips su Web Performance Optimization per siti ad alto traffico WordCamp Bologna (Italy) 2013](https://www.slideshare.net/AndreaCardinali/50-tips-su-web-performance-optimization-per-siti-ad-alto-traffico-wpcamp-bologna-2013)
 
-## Changelog
-
-- 2023-05-03: Revised content to comply with [External Linking Policy](https://make.wordpress.org/docs/handbook/documentation-team-handbook/external-linking-policy/).
-- 2022-09-11: Original content from [Optimization](https://wordpress.org/documentation/article/optimization/).

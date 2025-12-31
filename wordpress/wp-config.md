@@ -100,7 +100,7 @@ Set WP_PLUGIN_URL to the full **URI** of this directory (no trailing slash), e.g
 define( 'WP_PLUGIN_URL', 'https://example/blog/wp-content/plugins' );
 ```
 
-If you have compability issues with plugins Set PLUGINDIR to the full **local path** of this directory (no trailing slash), e.g.
+If you have compatibility issues with plugins Set PLUGINDIR to the full **local path** of this directory (no trailing slash), e.g.
 
 ```
 define( 'PLUGINDIR', dirname(__FILE__) . '/blog/wp-content/plugins' );
@@ -668,7 +668,7 @@ Reference: [Disabling Auto Updates in WordPress 3.7](https://make.wordpress.org/
 
 ### Cleanup Image Edits {#cleanup-image-edits}
 
-By default, WordPress creates a new set of images every time you edit an image and when you restore the original, it leaves all the edits on the server. Defining IMAGE_EDIT_OVERWRITE as true changes this behaviour. Only one set of image edits are ever created and when you restore the original, the edits are removed from the server.
+By default, WordPress creates a new set of images every time you edit an image and when you restore the original, it leaves all the edits on the server. Defining IMAGE_EDIT_OVERWRITE as true changes this behavior. Only one set of image edits are ever created and when you restore the original, the edits are removed from the server.
 
 ```
 define( 'IMAGE_EDIT_OVERWRITE', true );
@@ -682,8 +682,3 @@ Before you save the file, be sure to **double-check** that you have not accident
 
 To save the file, choose **File > Save As > wp-config.php** and save the file in the root of your WordPress install. Upload the file to your web server and you're ready to install WordPress!
 
-## Changelog
-
-- 2022-10-25: Fix content and links.
-- 2022-09-04: Original content from [wp-config.php](https://developer.wordpress.org/apis/wp-config-php/); ticket [Github](https://github.com/WordPress/Documentation-Issue-Tracker/issues/349).
-- 2023-01-20: Add content to the start from [documentation](https://wordpress.org/documentation/article/editing-wp-config-php/) ticket [Github](https://github.com/WordPress/Advanced-administration-handbook/issues/89)

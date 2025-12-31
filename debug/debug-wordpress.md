@@ -1,6 +1,6 @@
 # Debugging in WordPress
 
-Debugging PHP code is part of any project, but WordPress comes with specific debug systems designed to simplify the process as well as standardize code across the core, plugins, and themes. This page describes the various debugging tools on WordPress and how to be more productive in your coding, as well as increasing the overall quality and interoperability of your code.
+Debugging PHP code is part of any project, but WordPress comes with specific debugging systems designed to simplify the process as well as standardize code across the core, plugins, and themes. This page describes the various debugging tools available in WordPress and how to be more productive in your coding, as well as increasing the overall quality and interoperability of your code.
 
 For non-programmers or general users, these options can be used to show detailed information about errors.
 
@@ -130,7 +130,7 @@ define( 'SCRIPT_DEBUG', true );
 
 ## SAVEQUERIES
 
-The `SAVEQUERIES` definition saves the database queries to an array, and that array can be displayed to help analyze those queries. The constant defined as true causes each query to be saved, how long that query took to execute, and what function called it.
+The `SAVEQUERIES` definition saves database queries to an array, which can then be displayed to help analyze those queries. When the constant is set to true, it causes each query to be saved along with the time it took to execute and the function that called it.
 
 ```
 define( 'SAVEQUERIES', true );
@@ -146,7 +146,3 @@ There are many [debugging plugins](https://wordpress.org/plugins/search/debug/) 
 
 For example, [Debug Bar](https://wordpress.org/plugins/debug-bar/) adds a debug menu to the admin bar that shows query, cache, and other helpful debugging information. When WP_DEBUG is enabled, it also tracks PHP Warnings and Notices to make them easier to find.
 
-## Changelog
-
-- 2023-02-01: Updated original content.
-- 2022-09-11: Original content from [Debugging in WordPress](https://wordpress.org/documentation/article/debugging-in-wordpress/); ticket from [Github](https://github.com/WordPress/Documentation-Issue-Tracker/issues/349).
